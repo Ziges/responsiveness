@@ -1,0 +1,97 @@
+.flexbox {
+    display: flex;
+    border: 5px solid white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+#small {
+    border: 3px solid purple;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+
+}
+
+#medium {
+    border: 3px solid yellow;
+    width: 30%;
+    margin: 10px;
+}
+
+#large {
+    border: 3px solid white;
+    width: 30%;
+    margin: 10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    body {
+        background-color: red;
+        font-family: Arial Black;
+        display: block;
+    }
+
+    .flexbox {
+        flex-direction: column;
+    }
+
+    #small, #large, #medium {
+        width: 90%;
+        padding: 10px;
+    }
+
+    /* Display / hide elements*/
+    /*#medium {*/
+    /*    display: none;*/
+    /*}*/
+    /*#large {*/
+    /*    display: none;*/
+    /*}*/
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    body {
+        background-color: green;
+        font-family: "sans-serif";
+    }
+
+    .flexbox {
+        flex-wrap: wrap;
+    }
+
+    #small {
+        flex-grow: 2;
+    }
+
+    #large {
+        flex-grow: 3;
+    }
+
+    /* Display / hide elements*/
+    /*#small {*/
+    /*    display: none;*/
+    /*}*/
+    /*#large {*/
+    /*    display: none;*/
+    /*}*/
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: blue;
+        font-family: Helvetica;
+    }
+
+
+    /* Display / hide elements*/
+    /*#medium {*/
+    /*    display: none;*/
+    /*}*/
+    /*#small {*/
+    /*    display: none;*/
+    /*}*/
+}
